@@ -1,7 +1,7 @@
 # Tetraploid potato cross PRJNA414303 
 
 Variant calls from capture-GBS data of chromosome 5 of a 4x bi-parental cross of *Solanum tuberosum*.
-Variant calling pipeline was kept simple without QC or filtering to produce a rough example VCF for testing IO.
+Variant calling pipeline was kept simple with minimal QC or filtering to produce a rough example VCF for testing IO.
 
 ## Metadata
 
@@ -17,6 +17,7 @@ Variant calling pipeline was kept simple without QC or filtering to produce a ro
 - `samtools/1.3.1`
 - `bwa/0.7.17`
 - `freebayes/1.3.4`
+- `bcftools/1.12`
 - `tabix/0.2.6`
 
 ## Scripts
@@ -24,3 +25,8 @@ Variant calling pipeline was kept simple without QC or filtering to produce a ro
 - **Download data:** [`01_download.sh`](01_download.sh)
 - **Align Reads:** [`02_alignment.sh`](02_alignment.sh)
 - **Call variants:** [`03_calling.sh`](03_calling.sh)
+- **Filtering:** [`04_filter.sh`](04_filter.sh)
+
+## Output VCFs
+
+- [`./vcf/`](./vcf/)
