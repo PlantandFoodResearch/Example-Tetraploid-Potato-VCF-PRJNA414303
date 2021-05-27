@@ -10,7 +10,7 @@ BAMS=bamlist.txt
 ls bam/*.bam > $BAMS
 REF=fasta/PGSC_DM_v4.03_pseudomolecules_ALL.fasta
 VCF=vcf/PRJNA414303.CHR5.vcf.gz
-bsub -o << EOF
+bsub << EOF
 #!/bin/bash
 #BSUB -o calling.out
 #BSUB -e calling.err
