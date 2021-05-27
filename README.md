@@ -3,6 +3,16 @@
 Variant calls from capture-GBS data of chromosome 5 of a 4x bi-parental cross of *Solanum tuberosum*.
 Variant calling pipeline was kept simple with minimal QC or filtering to produce a rough example VCF for testing IO.
 
+## Contributors
+
+Thanks to:
+
+- Samantha Baldwin
+- Katrina Monaghan
+- Susan Thomson
+
+for producing and publishing the sequencing data.
+
 ## Metadata
 
 - **NCBI BioProject:** [PRJNA414303](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA414303)
