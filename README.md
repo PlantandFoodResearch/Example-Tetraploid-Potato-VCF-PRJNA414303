@@ -29,4 +29,6 @@ Variant calling pipeline was kept simple with minimal QC or filtering to produce
 
 ## Output VCFs
 
-- [`./vcf/`](./vcf/)
+- **Raw variant calls:** `PRJNA414303.CHR5.vcf.gz`
+- **Filtered to depth >= 10 in 1 or more samples:** `PRJNA414303.CHR5.filterDP10.vcf.gz`
+
