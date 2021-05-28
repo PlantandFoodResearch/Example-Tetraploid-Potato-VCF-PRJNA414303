@@ -14,3 +14,14 @@ bsub << EOF
 bcftools filter -i'FMT/DP>9' $INVCF | bgzip > $OUTVCF
 EOF
 
+
+# %%
+# filter mixed ploidy vcf
+INVCF=vcf/PRJNA414303.CHR5.mixed.vcf.gz
+OUTVCF=vcf/PRJNA414303.CHR5.mixed.filterDP10.vcf.gz
+bsub << EOF
+#!/bin/bash
+#BSUB -o filter-mixed-dp10.out
+#BSUB -e filter-mixed-dp10.err
+bcftools filter -i'FMT/DP>9' $INVCF | bgzip > $OUTVCF
+EOF
